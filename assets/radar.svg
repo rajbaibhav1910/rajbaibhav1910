@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="400" viewBox="0 0 460 400" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <defs>
+    <radialGradient id="rg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7aa2f7" stop-opacity=".55"/><stop offset="100%" stop-color="#f472b6" stop-opacity=".12"/>
+    </radialGradient>
+    <linearGradient id="scan" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/><stop offset="100%" stop-color="#38bdf8" stop-opacity=".9"/>
+    </linearGradient>
+    <filter id="glr" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="460" height="400" rx="18" fill="#0d1117"/>
+  <rect x="1" y="1" width="458" height="398" rx="18" fill="none" stroke="#1f2633"/>
+
+  <g stroke="#1f2633" fill="none">
+    <circle cx="230" cy="200" r="35"/><circle cx="230" cy="200" r="70"/>
+    <circle cx="230" cy="200" r="105"/><circle cx="230" cy="200" r="140"/>
+  </g>
+  <g stroke="#232b3d">
+    <line x1="230" y1="200" x2="230" y2="60"/><line x1="230" y1="200" x2="329" y2="101"/>
+    <line x1="230" y1="200" x2="370" y2="200"/><line x1="230" y1="200" x2="329" y2="299"/>
+    <line x1="230" y1="200" x2="230" y2="340"/><line x1="230" y1="200" x2="131" y2="299"/>
+    <line x1="230" y1="200" x2="90" y2="200"/><line x1="230" y1="200" x2="131" y2="101"/>
+  </g>
+
+  <line x1="230" y1="200" x2="230" y2="62" stroke="url(#scan)" stroke-width="2.4" opacity=".65">
+    <animateTransform attributeName="transform" type="rotate" from="0 230 200" to="360 230 200" dur="7s" repeatCount="indefinite"/>
+  </line>
+
+  <polygon points="230,74 314,116 342,200 301,301 230,295 155,306 146,200 119,85" fill="url(#rg)" stroke="#38bdf8" stroke-width="1.8" filter="url(#glr)">
+    <animate attributeName="points" dur="4.6s" repeatCount="indefinite"
+      values="230,74 314,116 342,200 301,301 230,295 155,306 146,200 119,85;
+              230,82 309,121 335,200 325,295 230,290 130,300 151,200 122,92;
+              230,74 314,116 342,200 301,301 230,295 155,306 146,200 119,85"/>
+  </polygon>
+
+  <g fill="#9ece6a" filter="url(#glr)">
+    <circle cx="230" cy="74" r="3.4"><animate attributeName="opacity" values="1;.25;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="342" cy="200" r="3.4"><animate attributeName="opacity" values="1;.25;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="230" cy="295" r="3.4"><animate attributeName="opacity" values="1;.25;1" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="146" cy="200" r="3.4"><animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g fill="#c0caf5" font-size="12" text-anchor="middle">
+    <text x="230" y="46">AWS</text><text x="346" y="94">Linux</text>
+    <text x="392" y="205">Docker</text><text x="346" y="316">K8s</text>
+    <text x="230" y="362">Terraform</text><text x="114" y="316">Python</text>
+    <text x="68" y="205">Java</text><text x="114" y="94">Git</text>
+  </g>
+  <text x="230" y="392" fill="#565f89" font-size="11" text-anchor="middle">cloud · infra · code</text>
+</svg>

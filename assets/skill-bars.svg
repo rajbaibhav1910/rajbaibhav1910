@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7aa2f7"/><stop offset="60%" stop-color="#2acbcd"/><stop offset="100%" stop-color="#9ece6a"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/><stop offset="50%" stop-color="#ffffff" stop-opacity=".22"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="gl" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="760" height="360" rx="18" fill="#0d1117"/>
+  <rect x="1" y="1" width="758" height="358" rx="18" fill="none" stroke="#1f2633"/>
+  <text x="28" y="38" fill="#c0caf5" font-size="15">proficiency  ·  self-assessed</text>
+  <text x="732" y="38" fill="#565f89" font-size="12" text-anchor="end">refreshed on every deploy</text>
+
+  <g font-size="13">
+    <text x="28" y="78" fill="#7aa2f7">AWS</text>
+    <rect x="130" y="66" width="520" height="14" rx="7" fill="#161b22" stroke="#1f2633"/>
+    <rect x="130" y="66" width="0" height="14" rx="7" fill="url(#bar)" filter="url(#gl)">
+      <animate attributeName="width" values="0;468;468;468" keyTimes="0;0.28;0.9;1" dur="11s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="78" fill="#565f89">92%</text>
+
+    <text x="28" y="118" fill="#7aa2f7">Linux</text>
+    <rect x="130" y="106" width="520" height="14" rx="7" fill="#161b22" stroke="#1f2633"/>
+    <rect x="130" y="106" width="0" height="14" rx="7" fill="url(#bar)" filter="url(#gl)">
+      <animate attributeName="width" values="0;442;442;442" keyTimes="0;0.31;0.9;1" dur="11s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="118" fill="#565f89">85%</text>
+
+    <text x="28" y="158" fill="#7aa2f7">Docker</text>
+    <rect x="130" y="146" width="520" height="14" rx="7" fill="#161b22" stroke="#1f2633"/>
+    <rect x="130" y="146" width="0" height="14" rx="7" fill="url(#bar)" filter="url(#gl)">
+      <animate attributeName="width" values="0;416;416;416" keyTimes="0;0.34;0.9;1" dur="11s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="158" fill="#565f89">80%</text>
+
+    <text x="28" y="198" fill="#7aa2f7">Kubernetes</text>
+    <rect x="130" y="186" width="520" height="14" rx="7" fill="#161b22" stroke="#1f2633"/>
+    <rect x="130" y="186" width="0" height="14" rx="7" fill="url(#bar)" filter="url(#gl)">
+      <animate attributeName="width" values="0;374;374;374" keyTimes="0;0.37;0.9;1" dur="11s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="198" fill="#565f89">72%</text>
+
+    <text x="28" y="238" fill="#7aa2f7">Terraform</text>
+    <rect x="130" y="226" width="520" height="14" rx="7" fill="#161b22" stroke="#1f2633"/>
+    <rect x="130" y="226" width="0" height="14" rx="7" fill="url(#bar)" filter="url(#gl)">
+      <animate attributeName="width" values="0;354;354;354" keyTimes="0;0.40;0.9;1" dur="11s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="238" fill="#565f89">68%</text>
+
+    <text x="28" y="278" fill="#7aa2f7">Python</text>
+    <rect x="130" y="266" width="520" height="14" rx="7" fill="#161b22" stroke="#1f2633"/>
+    <rect x="130" y="266" width="0" height="14" rx="7" fill="url(#bar)" filter="url(#gl)">
+      <animate attributeName="width" values="0;395;395;395" keyTimes="0;0.43;0.9;1" dur="11s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="278" fill="#565f89">76%</text>
+
+    <text x="28" y="318" fill="#7aa2f7">Java</text>
+    <rect x="130" y="306" width="520" height="14" rx="7" fill="#161b22" stroke="#1f2633"/>
+    <rect x="130" y="306" width="0" height="14" rx="7" fill="url(#bar)" filter="url(#gl)">
+      <animate attributeName="width" values="0;312;312;312" keyTimes="0;0.46;0.9;1" dur="11s" repeatCount="indefinite"/>
+    </rect>
+    <text x="666" y="318" fill="#565f89">60%</text>
+  </g>
+
+  <g>
+    <circle cx="130" cy="73" r="4" fill="#9ece6a" filter="url(#gl)">
+      <animate attributeName="cx" values="130;598;598;598" keyTimes="0;0.28;0.9;1" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;.2;1" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="193" r="4" fill="#9ece6a" filter="url(#gl)">
+      <animate attributeName="cx" values="130;504;504;504" keyTimes="0;0.37;0.9;1" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;.2;1" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="130" cy="273" r="4" fill="#9ece6a" filter="url(#gl)">
+      <animate attributeName="cx" values="130;525;525;525" keyTimes="0;0.43;0.9;1" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g opacity=".55">
+    <rect x="-220" y="52" width="180" height="290" fill="url(#sheen)" transform="skewX(-18)">
+      <animate attributeName="x" values="-220;900" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

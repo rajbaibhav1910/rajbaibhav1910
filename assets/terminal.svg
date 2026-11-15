@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="380" viewBox="0 0 820 380" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="progFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2acbcd"/><stop offset="100%" stop-color="#9ece6a"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="typeA"><rect x="46" y="96" width="0" height="24"><animate attributeName="width" values="0;0;250;250" keyTimes="0;0.06;0.16;1" dur="15s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typeB"><rect x="46" y="126" width="0" height="24"><animate attributeName="width" values="0;0;300;300" keyTimes="0;0.20;0.30;1" dur="15s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typeC"><rect x="46" y="262" width="0" height="24"><animate attributeName="width" values="0;0;270;270" keyTimes="0;0.70;0.80;1" dur="15s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+
+  <rect width="820" height="380" rx="18" fill="#0d1117"/>
+  <rect x="1" y="1" width="818" height="378" rx="18" fill="none" stroke="#1f2633"/>
+  <path d="M1 19 Q1 1 19 1 H801 Q819 1 819 19 V52 H1 Z" fill="#161b22"/>
+  <circle cx="26" cy="27" r="6" fill="#ff5f56"/><circle cx="46" cy="27" r="6" fill="#ffbd2e"/><circle cx="66" cy="27" r="6" fill="#27c93f"/>
+  <text x="410" y="32" fill="#565f89" font-size="14" text-anchor="middle">raj@cloud-lab : ~/infra/production</text>
+  <line x1="1" y1="52" x2="819" y2="52" stroke="#1f2633"/>
+
+  <text x="26" y="112" fill="#7aa2f7" font-size="15">$</text>
+  <g clip-path="url(#typeA)"><text x="46" y="112" fill="#c0caf5" font-size="15">whoami --stack</text></g>
+  <text x="26" y="142" fill="#7aa2f7" font-size="15">$</text>
+  <g clip-path="url(#typeB)"><text x="46" y="142" fill="#c0caf5" font-size="15">terraform apply -auto-approve</text></g>
+
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.31;0.34;1" dur="15s" repeatCount="indefinite"/>
+    <text x="46" y="176" fill="#565f89" font-size="13">Plan: 14 to add, 0 to change, 0 to destroy.</text>
+  </g>
+
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.36;0.40;1" dur="15s" repeatCount="indefinite"/>
+    <text x="46" y="206" fill="#bb9af7" font-size="13">aws</text><text x="88" y="206" fill="#565f89" font-size="13">vpc · eks · alb · rds · s3</text>
+    <text x="316" y="206" fill="#bb9af7" font-size="13">linux</text><text x="361" y="206" fill="#565f89" font-size="13">hardened AMI</text>
+    <text x="480" y="206" fill="#bb9af7" font-size="13">docker</text><text x="533" y="206" fill="#565f89" font-size="13">multi-stage build</text>
+  </g>
+
+  <g>
+    <rect x="46" y="222" width="620" height="9" rx="4.5" fill="#1f2633"/>
+    <rect x="46" y="222" width="0" height="9" rx="4.5" fill="url(#progFill)" filter="url(#soft)">
+      <animate attributeName="width" values="0;0;620;620" keyTimes="0;0.42;0.68;1" dur="15s" repeatCount="indefinite"/>
+    </rect>
+    <text x="678" y="231" fill="#565f89" font-size="12">applying...</text>
+  </g>
+
+  <text x="26" y="278" fill="#7aa2f7" font-size="15">$</text>
+  <g clip-path="url(#typeC)"><text x="46" y="278" fill="#c0caf5" font-size="15">kubectl get pods -n prod</text></g>
+
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.83;0.86;1" dur="15s" repeatCount="indefinite"/>
+    <text x="46" y="308" fill="#38bdf8" font-size="13">api-gateway-7d9f   1/1   Running   0   42s</text>
+    <text x="46" y="330" fill="#9ece6a" font-size="13" filter="url(#soft)">[ OK ]  stack live  ·  3 nodes  ·  0 alerts</text>
+  </g>
+
+  <text x="26" y="360" fill="#7aa2f7" font-size="15">$</text>
+  <rect x="46" y="348" width="9" height="15" fill="#7dcfff">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

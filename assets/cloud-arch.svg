@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#10141f"/>
+    </linearGradient>
+    <filter id="glowA" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .n{fill:#161b22;stroke:#2f3a52;stroke-width:1.4}
+      .t{fill:#c0caf5;font-size:13px}
+      .s{fill:#565f89;font-size:11px}
+      .link{fill:none;stroke:#2f3a52;stroke-width:1.6;stroke-dasharray:7 7;animation:flow 1.1s linear infinite}
+      .hot{fill:none;stroke:#38bdf8;stroke-width:1.8;stroke-dasharray:6 8;animation:flow .7s linear infinite}
+      .data{fill:none;stroke:#7aa2f7;stroke-width:1.5;stroke-dasharray:4 9;animation:flow 1.9s linear infinite}
+      @keyframes flow{to{stroke-dashoffset:-14}}
+      .pk{fill:#f472b6;filter:url(#glowA)}
+      .pk2{fill:#2acbcd;filter:url(#glowA)}
+      .pk3{fill:#7aa2f7;filter:url(#glowA)}
+    </style>
+  </defs>
+
+  <rect width="900" height="420" rx="18" fill="url(#bgA)"/>
+  <rect x="1" y="1" width="898" height="418" rx="18" fill="none" stroke="#1f2633"/>
+
+  <path id="a" class="link" d="M94,198 C124,150 132,112 150,112"/>
+  <path id="b" class="link" d="M94,222 C124,270 132,308 150,308"/>
+  <path id="c" class="link" d="M260,112 C302,124 300,178 310,200"/>
+  <path id="d" class="link" d="M260,308 C302,296 300,242 310,222"/>
+  <path id="e" class="hot" d="M410,204 C436,150 452,130 490,130"/>
+  <path id="f" class="hot" d="M410,210 C452,206 558,190 600,190"/>
+  <path id="g" class="hot" d="M410,220 C446,262 460,270 500,270"/>
+  <path id="h" class="data" d="M680,190 C734,180 742,152 772,142"/>
+  <path id="i" class="data" d="M570,126 C676,104 720,118 772,132"/>
+  <path id="j" class="data" d="M580,274 C700,292 722,300 772,302"/>
+
+  <circle cx="64" cy="210" r="30" fill="none" stroke="#7aa2f7" stroke-width="1.6"/>
+  <ellipse cx="64" cy="210" rx="12" ry="30" fill="none" stroke="#7aa2f7" stroke-width="1.2" opacity=".75"/>
+  <line x1="34" y1="210" x2="94" y2="210" stroke="#7aa2f7" stroke-width="1.2" opacity=".75"/>
+  <circle cx="64" cy="210" r="38" fill="none" stroke="#7aa2f7" stroke-width="1" opacity=".5">
+    <animate attributeName="r" values="34;50;34" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".55;0;.55" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="64" y="262" text-anchor="middle" class="s">INTERNET</text>
+
+  <g><rect x="150" y="90" width="110" height="44" rx="10" class="n"/>
+    <text x="205" y="110" text-anchor="middle" class="t">CloudFront</text><text x="205" y="126" text-anchor="middle" class="s">edge CDN</text></g>
+  <g><rect x="150" y="286" width="110" height="44" rx="10" class="n"/>
+    <text x="205" y="306" text-anchor="middle" class="t">Route 53</text><text x="205" y="322" text-anchor="middle" class="s">DNS / health</text></g>
+
+  <g><rect x="310" y="186" width="100" height="48" rx="10" class="n" stroke="#e0af68"/>
+    <text x="360" y="207" text-anchor="middle" class="t">ALB</text><text x="360" y="223" text-anchor="middle" class="s">load balancer</text>
+    <rect x="310" y="186" width="100" height="48" rx="10" fill="none" stroke="#e0af68" stroke-width="1.2">
+      <animate attributeName="opacity" values=".15;.8;.15" dur="2.2s" repeatCount="indefinite"/>
+    </rect></g>
+
+  <g><rect x="460" y="70" width="250" height="280" rx="16" fill="#131a2a" stroke="#2f3a52" stroke-dasharray="4 6">
+      <animate attributeName="stroke-dashoffset" values="0;20" dur="4s" repeatCount="indefinite"/></rect>
+    <text x="474" y="92" class="t" fill="#bb9af7">EKS cluster</text><text x="640" y="92" class="s">prod · 3 nodes</text>
+    <circle cx="585" cy="210" r="104" fill="none" stroke="#7aa2f7" stroke-width=".8" opacity=".22" stroke-dasharray="3 9">
+      <animateTransform attributeName="transform" type="rotate" from="0 585 210" to="360 585 210" dur="26s" repeatCount="indefinite"/>
+    </circle>
+
+    <g><rect x="490" y="110" width="80" height="40" rx="8" class="n" stroke="#38bdf8"/>
+      <text x="530" y="128" text-anchor="middle" class="t">api</text><text x="530" y="142" text-anchor="middle" class="s">pod 1/1</text></g>
+    <g><rect x="600" y="170" width="80" height="40" rx="8" class="n" stroke="#38bdf8"/>
+      <text x="640" y="188" text-anchor="middle" class="t">web</text><text x="640" y="202" text-anchor="middle" class="s">pod 1/1</text></g>
+    <g><rect x="500" y="250" width="80" height="40" rx="8" class="n" stroke="#38bdf8"/>
+      <text x="540" y="268" text-anchor="middle" class="t">worker</text><text x="540" y="282" text-anchor="middle" class="s">pod 1/1</text></g>
+
+    <circle cx="568" cy="130" r="5" fill="#9ece6a"><animate attributeName="opacity" values="1;.15;1" dur="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="678" cy="190" r="5" fill="#9ece6a"><animate attributeName="opacity" values="1;.15;1" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="578" cy="270" r="5" fill="#ff9e64"><animate attributeName="opacity" values="1;.15;1" dur="1.3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g><ellipse cx="800" cy="128" rx="28" ry="10" class="n"/><path d="M772,128 V160 A28,10 0 0 0 828,160 V128" class="n"/>
+    <ellipse cx="800" cy="128" rx="28" ry="10" fill="none" stroke="#2f3a52"/>
+    <text x="800" y="192" text-anchor="middle" class="t">RDS</text><text x="800" y="207" text-anchor="middle" class="s">Postgres</text></g>
+  <g><path d="M774,286 h52 l-6,34 h-40 z" class="n"/><ellipse cx="800" cy="286" rx="26" ry="8" class="n"/>
+    <text x="800" y="342" text-anchor="middle" class="t">S3</text><text x="800" y="357" text-anchor="middle" class="s">artifacts</text></g>
+
+  <circle class="pk" r="4"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#c"/></animateMotion></circle>
+  <circle class="pk" r="4"><animateMotion dur="2.6s" begin="1.3s" repeatCount="indefinite"><mpath href="#d"/></animateMotion></circle>
+  <circle class="pk2" r="3.6"><animateMotion dur="1.8s" repeatCount="indefinite"><mpath href="#e"/></animateMotion></circle>
+  <circle class="pk2" r="3.6"><animateMotion dur="1.8s" begin=".6s" repeatCount="indefinite"><mpath href="#f"/></animateMotion></circle>
+  <circle class="pk2" r="3.6"><animateMotion dur="1.8s" begin="1.2s" repeatCount="indefinite"><mpath href="#g"/></animateMotion></circle>
+  <circle class="pk3" r="3.4"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#h"/></animateMotion></circle>
+  <circle class="pk3" r="3.4"><animateMotion dur="2.2s" begin="1.1s" repeatCount="indefinite"><mpath href="#i"/></animateMotion></circle>
+  <circle class="pk3" r="3.4"><animateMotion dur="2.4s" begin=".4s" repeatCount="indefinite"><mpath href="#j"/></animateMotion></circle>
+
+  <g><rect x="460" y="366" width="10" height="10" rx="2" fill="#f472b6"/><text x="476" y="375" class="s">user traffic</text>
+     <rect x="560" y="366" width="10" height="10" rx="2" fill="#2acbcd"/><text x="576" y="375" class="s">mesh / pod-to-pod</text>
+     <rect x="700" y="366" width="10" height="10" rx="2" fill="#7aa2f7"/><text x="716" y="375" class="s">persistence</text></g>
+</svg>
