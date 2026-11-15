@@ -88,21 +88,21 @@
 
 <table align="center"><tr>
 <td align="center">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=rajbaibhav1910&theme=tokyonight&hide_border=true&border_radius=14&card_width=440&count_private=true&include_all_commits=true&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" alt="GitHub Stats" />
+<img src="https://github-readme-stats-phi.vercel.app/api?username=rajbaibhav1910&theme=tokyonight&hide_border=true&border_radius=14&card_width=440&count_private=true&include_all_commits=true&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" alt="GitHub Stats" />
 </td>
 <td align="center">
 <img src="https://streak-stats.demolab.com/?user=rajbaibhav1910&theme=tokyonight&hide_border=true&border_radius=14&width=440" alt="GitHub Streak" />
 </td>
 </tr><tr>
 <td align="center">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=rajbaibhav1910&theme=tokyonight&hide_border=true&border_radius=14&layout=compact&langs_count=8&card_width=440" alt="Top Languages" />
+<img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=rajbaibhav1910&theme=tokyonight&hide_border=true&border_radius=14&layout=compact&langs_count=8&card_width=440" alt="Top Languages" />
 </td>
 <td align="center">
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rajbaibhav1910&theme=tokyonight" alt="Profile Details" />
 </td>
 </tr></table>
 
-<img src="https://github-readme-activity-graph-psi.vercel.app/graph?username=rajbaibhav1910&bg_color=0d1117&color=38bdf8&line=f472b6&point=e6edf3&area=true&area_color=38bdf8&hide_border=true&border_radius=16&custom_title=Contribution%20Activity&radius=16" width="100%" alt="Contribution Activity Graph" />
+<img src="https://activity-graph.vercel.app/graph?username=rajbaibhav1910&bg_color=0d1117&color=38bdf8&line=f472b6&point=e6edf3&area=true&area_color=38bdf8&hide_border=true&border_radius=16&custom_title=Contribution%20Activity&radius=16" width="100%" alt="Contribution Activity Graph" />
 
 </div>
 
@@ -127,23 +127,23 @@
 <table align="center"><tr>
 <td align="center">
 <a href="https://github.com/rajbaibhav1910/Chaos-Engineering-Simulator">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=rajbaibhav1910&repo=Chaos-Engineering-Simulator&theme=tokyonight&hide_border=true&border_radius=14" alt="Chaos Engineering Simulator" />
+<img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=rajbaibhav1910&repo=Chaos-Engineering-Simulator&theme=tokyonight&hide_border=true&border_radius=14" alt="Chaos Engineering Simulator" />
 </a>
 </td>
 <td align="center">
 <a href="https://github.com/rajbaibhav1910/dr.ava">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=rajbaibhav1910&repo=dr.ava&theme=tokyonight&hide_border=true&border_radius=14" alt="dr.ava" />
+<img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=rajbaibhav1910&repo=dr.ava&theme=tokyonight&hide_border=true&border_radius=14" alt="dr.ava" />
 </a>
 </td>
 </tr><tr>
 <td align="center">
 <a href="https://github.com/rajbaibhav1910/voice-agent-workshop">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=rajbaibhav1910&repo=voice-agent-workshop&theme=tokyonight&hide_border=true&border_radius=14" alt="voice-agent-workshop" />
+<img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=rajbaibhav1910&repo=voice-agent-workshop&theme=tokyonight&hide_border=true&border_radius=14" alt="voice-agent-workshop" />
 </a>
 </td>
 <td align="center">
 <a href="https://github.com/rajbaibhav1910/aws-vpc-peering-lab">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=rajbaibhav1910&repo=aws-vpc-peering-lab&theme=tokyonight&hide_border=true&border_radius=14" alt="aws-vpc-peering-lab" />
+<img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=rajbaibhav1910&repo=aws-vpc-peering-lab&theme=tokyonight&hide_border=true&border_radius=14" alt="aws-vpc-peering-lab" />
 </a>
 </td>
 </tr></table>
